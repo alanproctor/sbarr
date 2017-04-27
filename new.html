@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SBARR: Create</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="bass.css"  rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="container">
+    <div class="col-md-12 col-sm-12 col-xs-12" id="header" style="margin:0;padding:0;">
+        <div class="col-md-6 col-sm-6 col-xs-6" style="height:40px;border-bottom:1px solid black;background-color:black;text-align:left;line-height:40px;color:white;">
+            MyRounding
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6" style="height:40px;border-bottom:1px solid black;background-color:black;text-align:right;line-height:40px;color:white;text-decoration:underline;">
+            Alan Proctor
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12" style="height:40px;border-bottom:1px solid black;background-color:#CCC;text-align:right;line-height:40px;color:white;text-decoration:underline;">
+
+        </div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12" id="content">
+        <h1>Create a new SBARR</h1>
+        <form>
+            <fieldset>
+                <div class="col-md-12" style="margin-top:10px;">
+                    <div class="col-md-4">
+                        Type
+                    </div>
+                    <div class="col-md-8">
+                        <select>
+                            <option>Open</option>
+                            <option>Patient</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-12" style="margin-top:10px;">
+                    <div class="col-md-4">
+                        Severity
+                    </div>
+                    <div class="col-md-8">
+                        <select>
+                            <option>High</option>
+                            <option>Medium</option>
+                            <option>Low</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-12" id="patientTemplateKeyValue" style="border-top:1px dotted black;margin-top:10px;">
+                    <div class="col-md-12" style="margin:0;padding:0;margin-top:10px;">
+                        <div class="col-md-4">
+                            Key1
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" style="width:200px;" />
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="margin:0;padding:0;margin-top:10px;">
+                        <div class="col-md-4">
+                            Key2
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" style="width:200px;" />
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="margin:0;padding:0;margin-top:10px;">
+                        <div class="col-md-4">
+                            Key3
+                        </div>
+                        <div class="col-md-8">
+                            <textarea style="width:200px;" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="margin:0;padding:0;margin-top:5px;">
+                        <div class="col-md-4">
+                            Key4
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" style="width:200px;" /> <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12" id="openTemplateKeyValue" style="display:none;border-top:1px dotted black;margin-top:10px;">
+                    <div class="col-md-12" style="margin:0;padding:0;margin-top:10px;">
+                        <div class="col-md-4">
+                            Key1
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" style="width:200px;" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12" style="margin-top:10px;">
+                    <div class="col-md-4">&nbsp;</div>
+                    <div class="col-md-8">
+                        <input type="button" class="btn btn-success" value="Save &amp; Continue" />
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12" id="footer" style="height:30px;position:absolute;bottom:0;border-top:1px solid black;background-color:black;color:white;text-align:center;">
+        Copyright MyRounding 2017&copy;
+    </div>
+</div>
+</body>
+</html>
