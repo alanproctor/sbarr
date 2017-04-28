@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SBARR</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="bass.css" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="container">
+    <div class="col-md-12 col-sm-12 col-xs-12" id="header" style="margin:0;padding:0;">
+        <div class="col-md-6 col-sm-6 col-xs-6"
+             style="height:40px;border-bottom:1px solid black;background-color:black;text-align:left;line-height:40px;color:white;">
+            MyRounding
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6"
+             style="height:40px;border-bottom:1px solid black;background-color:black;text-align:right;line-height:40px;color:white;text-decoration:underline;">
+            Alan Proctor
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12" style="height:40px;border-bottom:1px solid black;background-color:#CCC;text-align:right;line-height:40px;color:white;text-decoration:underline;">
+            <a href="dashboard.html">Home</a>
+        </div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12" id="content">
+        <a class="btn btn-default" href="mailbox.html" style="margin: 5px;">
+            <span class="glyphicon glyphicon-align-left"></span>
+            <span>Mailboxes</span>
+        </a>
+        <a class="btn btn-default" href="new-open.html" style="margin: 5px; float: right;">
+            <span class="glyphicon glyphicon-new-window"></span>
+            <span>New SBAR</span>
+        </a>
+        <h1>Deferred</h1>
+        <div class="col-md-12">
+            <div>
+                <span class="glyphicon glyphicon-search"></span>
+                <input placeholder="Search for SBAR" style="width: 80%;" />
+
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>From<span class="caret"></span></th>
+                    <th>Type<span class="caret"></span></th>
+                    <th>Priority<span class="caret"></span></th>
+                    <th>Date<span class="caret"></span></th>
+                    <th>Status<span class="caret"></span></th>
+                    <th>Messages<span class="caret"></span></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tr>
+            <tr class='clickable-row' data-href='view-sbar.html'>
+                <td>Jon Snow</td>
+                <td>Open</td>
+                <td>Medium</td>
+                <td>4/28/2017</td>
+                <td>Deferred</td>
+                <td>0</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+<footer class="footer col-md-12 col-sm-12 col-xs-12" id="footer">
+    Copyright MyRounding 2017&copy;
+</footer>
+</body>
+</html>
+<script type="application/javascript">
+    jQuery(document).ready(function($) {
+        $(".clickable-row").click(function() {
+            window.location = $(this).data("href");
+        });
+    });
+</script>
