@@ -58,3 +58,30 @@ Ex: I will talk to Doctor Sean to discuss the medication dosage.
 Ex: I have cancelled the CT for rule-out PE and ordered a VQ scan for 5/1/17.
 
 ABOUT PAGE
+
+The Situation, Background, Assessment and
+Recommendation (SBAR) technique is used by healthcare
+organizations worldwide as a standardized communication model to deliver
+information in a structured format. SBAR supplies a concise and accurate
+framework to deliver relevant data that’s required to make a decision or to effect
+a change in procedure. Hospitals, practices and other healthcare organizations
+around the world have signifcantly increased safety and quality through SBAR.
+Streamlining information in this way reduces the likelihood of poor communication,
+which is the primary cause of medical errors.
+
+Traditionally, SBAR has been used as an informal tool when meeting with a team
+member about a patient’s condition or other situation that requires immediate
+attention. Even when prepared in writing, this communication may not be
+recorded. SBAR tools devised for certain clinical situations such as handoffs are
+often considered by staff as too time-consuming to be completed properly. Hence,
+these reports go mostly unread, and the SBAR tools remains underutilized. The
+MyRounding application is purpose-built to streamline this type of communication
+and maximize the effectiveness of this evidence-based process.
+
+An electronic SBAR “round” reduces the frequency of communication breakdowns
+by ensuring that all four essential components of effective communication—
+sender, receiver, message and feedback—are operating at peak
+performance. Not only that, similar SBAR reports can provide a
+multiplier effect that pinpoint serious problems. When more than
+one team member sends a report about the same problem, it’s
+more likely to be addressed immediately.
