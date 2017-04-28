@@ -4,15 +4,10 @@
     <title>SBARR</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css">
-    <link href="bass.css"  rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <link href="bass.css" rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <style>
-        .center{
-            text-align:center;
-        }
-    </style>
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -41,44 +36,50 @@
 
 <div id="container">
     <div class="col-md-12 col-sm-12 col-xs-12" id="content">
-        <h1>Add Users</h1>
+        <h1 style="text-align:center">Accept Recommendation <i class="fa fa-info-circle" aria-hidden="true"></i> </h1>
+        <div class="col-md-12 col-sm-12 col-xs-12" style="height:40px;margin-bottom:10px;background-color:#CCC;text-align:center;line-height:40px;color:white">
+            <a href="javascript:$('#feedbackModal').modal('show');" onclick="$('#feedbackModal .modal-body').html('test')">S</a>&nbsp;&nbsp;&nbsp;<a href="javascript:$('#feedbackModal').modal('show');" onclick="$('#feedbackModal .modal-body').html('test B')">B</a>&nbsp;&nbsp;&nbsp;<a href="javascript:$('#feedbackModal').modal('show');" onclick="$('#feedbackModal .modal-body').html('test B')">A</a>&nbsp;&nbsp;&nbsp;<a href="javascript:$('#feedbackModal').modal('show');" onclick="$('#feedbackModal .modal-body').html('test B')">R</a>
+        </div>
+        <div class="col-md-12" style="background-color:#e4e4e4;border:1px solid #000">
+            Nunc at turpis velit. Phasellus lobortis posuere aliquam. Nunc massa nulla, pellentesque eu dignissim sed, mollis et ipsum. Suspendisse hendrerit rutrum sem viverra fringilla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris eget hendrerit velit. Cras dignissim fringilla sapien, sed pretium ante. Mauris at purus a nulla aliquet eleifend eget ac urna.
+        </div>
+        <span style="color:red;" class="col-md-offset-3">*</span><br />
+        <textarea name="recommendation" rows="8" cols="86" placeholder="Enter a comment on the recommendation..." class="col-md-offset-3"></textarea><br>
+        <h2 style="text-align:center;">Resolvers <i class="fa fa-info-circle" aria-hidden="true"></i></h2>
         <div class="col-md-12">
             <input type="text" placeholder="Search for user" style="width:100%;"/>
         </div>
         <div class="col-md-12" style="margin-top:10px;">
             <table style="width:500px;margin-left:auto;margin-right:auto;">
                 <tr>
-                    <th>&nbsp;</th>
-                    <th class="center">Feedback</th>
-                    <th class="center">Decision Maker</th>
+                    <td>Self</td>
+                    <td class="center"><input type="checkbox" CHECKED /></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>Alan Proctor</td>
-                    <td class="center"><input type="checkbox" CHECKED /></td>
                     <td class="center"><input type="checkbox" /></td>
                 </tr>
+                <tr>
                     <td>Dean Clow</td>
                     <td class="center"><input type="checkbox" /></td>
-                    <td class="center"><input type="checkbox" CHECKED /></td>
                 </tr>
                 <tr>
                     <td>John Wiles</td>
-                    <td class="center"><input type="checkbox" CHECKED /></td>
                     <td class="center"><input type="checkbox" /></td>
                 </tr>
                 <tr>
                     <td>Michael Niederhauser, MD</td>
                     <td class="center"><input type="checkbox" /></td>
-                    <td class="center"><input type="checkbox" /></td>
                 </tr>
                 <tr>
                     <td>Mattie Moore</td>
                     <td class="center"><input type="checkbox" /></td>
-                    <td class="center"><input type="checkbox" /></td>
                 </tr>
                 <tr>
                     <td>Scott Recore</td>
-                    <td class="center"><input type="checkbox" /></td>
                     <td class="center"><input type="checkbox" /></td>
                 </tr>
 
@@ -87,13 +88,11 @@
                 </tr>
                 <tr>
                     <td><input type="text" placeholder="add email..." style="width:80%;" /> <i class="fa fa-plus-circle" style="color:black;"></i></td>
-                    <td class="center"><input type="checkbox" /></td>
-                    <td class="center"><input type="checkbox" /></td>
                 </tr>
             </table>
         </div>
-        <div class="col-md-12" style="text-align:center;margin-top:20px;">
-            <a href="email/example1.html" class="btn btn-primary" target="_blank" onclick="window.location.href='finished.html';" style="width:500px;">Save &amp; Send</a>
+        <div>
+            <a href="email/resolver-email.html" class="btn btn-primary col-md-6 col-md-offset-3" target="_blank" onclick="window.location.href='resolved-finished.html';" style="margin-top:15px;margin-bottom:15px;">Save &amp; Send</a>
         </div>
     </div>
 </div>
