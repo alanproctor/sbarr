@@ -10,17 +10,17 @@ ul {
     margin: 0;
 }
 
-.main {
+.mailbox-list {
     padding: 14px 24px;
     text-align: center;
 }
 
-.main .row {
+.mailbox-list .row {
     text-align: justify;
     margin: 0 auto;
     width: 30em;
 }
 
-.main .row .btn {
+.mailbox-list .row .btn {
     margin:5px;
 }
