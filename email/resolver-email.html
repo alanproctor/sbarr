@@ -3,7 +3,7 @@
 <head>
     <title>SBARR</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link href="bass.css"  rel='stylesheet' type='text/css'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,46 +25,29 @@
             position: absolute;
             top: 0;
             right: 0;
+
             height: 16px;
             width: 16px;
+
             background: white;
             border-radius: 8px;
+
             font-size: 12px;
             text-align: center;
         }
     </style>
 </head>
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="dashboard.html">JOOSBARR</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right">
-                <div class="form-group">
-                    <a class="navbar-brand" href="login.html">Alan Proctor</a>
-                </div>
-                <div class="form-group">
-                    <a class="navbar-brand" href="dashboard.html">Home</a>
-                </div>
-            </form>
-        </div><!--/.navbar-collapse -->
-    </div>
-</nav>
-
+<div style="padding:10px;border-bottom:1px dotted black;text-align:center;">Resolver Email Sent!!!</div>
 <div id="container">
     <div class="col-md-12 col-sm-12 col-xs-12" id="content">
         <div class="col-md-12" style="margin-top:0px;">
+            You have been added as a resolver for this SBAR.
+        </div>
+        <div class="col-md-12" style="margin-top:0px;">
             <div class="col-md-12" style="border:1px solid black;margin-top:15px;background-color:#CCC;color:black;text-align:right;padding:2px;">
                 <a href="#"><i class="fa fa-2x fa-pencil" style="color:black;"></i></a>
-                <a href="javascript:$('#feedbackModal').modal('show');">
+                <a href="../view-sbar-load-modal.html">
                     <span class="count-icon">
                         <i class="fa fa-2x fa-comment" style="color:black;"></i>
                         <span class="count">3</span>
@@ -125,37 +108,14 @@
                     </tr>
                 </table>
             </div>
-        </div>
-    </div>
 
-</div>
-
-<div id="feedbackModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Activity</h4>
-            </div>
-            <div class="modal-body" style="height:400px;">
-                <div style="max-height:200px;overflow:auto;border-bottom:1px dotted black;">
-                    <div><span style="text-decoration:underline;">John</span> (04/26/2017 04:53)</div>
-                    <div>Opened SBAR</div>
-
-                    <div style="margin-top:15px;"><span style="text-decoration:underline;">Alan</span> (04/26/2017 04:53)</div>
-                    <div>Comment:<p>This is an issue for me.</p></div>
-                </div>
-
-                <div style="margin-top:15px;">
-                    <textarea placeholder="Add a comment here..." style="width:100%;" rows="7"></textarea>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <input type="button" class="btn btn-success" value="Submit" />
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+            <div class="col-md-12" style="margin-top:5px;text-align:center;">
+                <a href="../view-sbar-load-modal-resolved.html" class="btn btn-primary">Add Feedback</a>
+                <a href="../resolution.html" class="btn btn-primary">Mark as Resolved</a>
             </div>
         </div>
     </div>
 </div>
+
 </body>
 </html>
