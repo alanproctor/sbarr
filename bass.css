@@ -37,3 +37,7 @@ ul {
     color: white;
     text-align: center;
 }
+
+#container {
+    padding-top: 70px;
+}
