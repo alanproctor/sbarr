@@ -33,8 +33,9 @@
                     </div>
                     <div class="col-md-8">
                         <select>
-                            <option>Open</option>
-                            <option>Patient</option>
+                            <option>Choose Template</option>
+                            <option value="open">Open</option>
+                            <option value="patient">Patient</option>
                         </select>
                     </div>
                 </div>
@@ -51,30 +52,45 @@
                         </select>
                     </div>
                 </div>
+                <div class="open box">
+                    <div class="col-md-12" id="openTemplateKeyValue" style="border-top:1px dotted black;margin-top:10px;">
+                        <div class="col-md-12" style="margin:0;padding:0;margin-top:10px;">
+                            <div class="col-md-4">
+                                <input type="text" placeholder="Enter key..."/>
+                            </div>
+                            <div class="col-md-8">
+                                <input type="text" style="width:200px;" placeholder="Enter value" />
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="col-md-12" id="openTemplateKeyValue" style="border-top:1px dotted black;margin-top:10px;">
-                    <div class="col-md-12" style="margin:0;padding:0;margin-top:10px;">
-                        <div class="col-md-4">
-                            <input type="text" placeholder="Enter key..."/>
+                <div class="patient box" style="display: none;">
+                    <div class="col-md-12" id="openTemplateKeyValue" style="border-top:1px dotted black;margin-top:10px;">
+                        <div class="col-md-12" style="margin:0;padding:0;margin-top:10px;">
+                            <div class="col-md-4">
+                                Patient Name
+                            </div>
+                            <div class="col-md-8">
+                                <input type="text" style="width:200px;" placeholder="Enter value" />
+                            </div>
                         </div>
-                        <div class="col-md-8">
-                            <input type="text" style="width:200px;" placeholder="Enter value" />
+                        <div class="col-md-12" style="margin:0;padding:0;margin-top:10px;">
+                            <div class="col-md-4">
+                                Room Number
+                            </div>
+                            <div class="col-md-8">
+                                <input type="text" style="width:200px;" placeholder="Enter value" />
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-12" style="margin:0;padding:0;margin-top:10px;">
-                        <div class="col-md-4">
-                            <input type="text" placeholder="Enter key..."/>
-                        </div>
-                        <div class="col-md-8">
-                            <input type="text" style="width:200px;" placeholder="Enter value" />
-                        </div>
-                    </div>
-                    <div class="col-md-12" style="margin:0;padding:0;margin-top:10px;">
-                        <div class="col-md-4">
-                            <input type="text" placeholder="Enter key..."/>
-                        </div>
-                        <div class="col-md-8">
-                            <input type="text" style="width:200px;" placeholder="Enter value" />
+                        <div class="col-md-12" style="margin:0;padding:0;margin-top:10px;">
+                            <div class="col-md-4">
+                                Bed Number
+                            </div>
+                            <div class="col-md-8">
+                                <input type="text" style="width:200px;" placeholder="Enter value" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -94,3 +110,31 @@
 </div>
 </body>
 </html>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+
+        $("select").change(function(){
+
+            $(this).find("option:selected").each(function(){
+
+                var optionValue = $(this).attr("value");
+
+                if(optionValue){
+
+                    $(".box").not("." + optionValue).hide();
+
+                    $("." + optionValue).show();
+
+                } else{
+
+                    $(".box").hide();
+
+                }
+
+            });
+
+        }).change();
+
+    });
+</script>
