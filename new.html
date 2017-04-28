@@ -24,73 +24,88 @@
         </div>
     </div>
     <div class="col-md-12 col-sm-12 col-xs-12" id="content">
-        <h1>Create a new SBARR (Patient Template)</h1>
+        <h1>Create a new SBARR</h1>
         <form>
             <fieldset>
                 <div class="col-md-12" style="margin-top:10px;">
                     <div class="col-md-4">
-                        Type
+                        <span style="color:red;">*</span> Type
                     </div>
                     <div class="col-md-8">
                         <select>
-                            <option>Open</option>
-                            <option>Patient</option>
+                            <option>Choose Template</option>
+                            <option value="open">Open</option>
+                            <option value="patient">Patient</option>
                         </select>
                     </div>
                 </div>
 
                 <div class="col-md-12" style="margin-top:10px;">
                     <div class="col-md-4">
-                        Severity
+                        <span style="color:red;">*</span> Severity
                     </div>
                     <div class="col-md-8">
                         <select>
-                            <option>High</option>
+                            <option>HIGH</option>
                             <option>Medium</option>
-                            <option>Low</option>
+                            <option SELECTED>Low</option>
                         </select>
                     </div>
                 </div>
-
-                <div class="col-md-12" id="patientTemplateKeyValue" style="border-top:1px dotted black;margin-top:10px;">
-                    <div class="col-md-12" style="margin:0;padding:0;margin-top:10px;">
-                        <div class="col-md-4">
-                            Key1
+                <div class="open box">
+                    <div class="col-md-12" style="border-top:1px dotted black;margin-top:10px;">
+                        <div class="col-md-12">
+                            Fusce vitae leo sed nunc lacinia tincidunt a id risus. Ut sit amet mi libero. Ut vel velit et ipsum ultricies dignissim. Morbi porttitor, risus eget sollicitudin commodo, odio augue pretium nisl, vel egestas lectus odio ut nulla. Mauris luctus eros eget odio porttitor, id mattis lectus ultrices. Aliquam vel dolor cursus enim dictum aliquam ut nec dolor. Suspendisse quis fringilla lectus. Proin non maximus justo. Mauris in lectus libero.
                         </div>
-                        <div class="col-md-8">
-                            <input type="text" style="width:200px;" placeholder="Value..." />
-                        </div>
-                    </div>
-                    <div class="col-md-12" style="margin:0;padding:0;margin-top:10px;">
-                        <div class="col-md-4">
-                            Key2
-                        </div>
-                        <div class="col-md-8">
-                            <input type="text" style="width:200px;" placeholder="Value..." />
-                        </div>
-                    </div>
-                    <div class="col-md-12" style="margin:0;padding:0;margin-top:10px;">
-                        <div class="col-md-4">
-                            Key3
-                        </div>
-                        <div class="col-md-8">
-                            <textarea style="width:200px;" rows="10" placeholder="Value..."></textarea>
-                        </div>
-                    </div>
-                    <div class="col-md-12" style="margin:0;padding:0;margin-top:5px;">
-                        <div class="col-md-4">
-                            Key4
-                        </div>
-                        <div class="col-md-8">
-                            <input type="text" style="width:200px;" placeholder="Value..."/> <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        <div class="col-md-12" style="margin:0;padding:0;margin-top:10px;">
+                            <div class="col-md-4">
+                                <input type="text" placeholder="Enter key..."/>
+                            </div>
+                            <div class="col-md-8">
+                                <input type="text" style="width:200px;" placeholder="Enter value" />
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-12" style="margin-top:10px;">
+                <div class="patient box" style="display: none;">
+                    <div class="col-md-12" style="border-top:1px dotted black;margin-top:10px;">
+                        <div class="col-md-12">
+                            Fusce vitae leo sed nunc lacinia tincidunt a id risus. Ut sit amet mi libero. Ut vel velit et ipsum ultricies dignissim. Morbi porttitor, risus eget sollicitudin commodo, odio augue pretium nisl, vel egestas lectus odio ut nulla. Mauris luctus eros eget odio porttitor, id mattis lectus ultrices. Aliquam vel dolor cursus enim dictum aliquam ut nec dolor. Suspendisse quis fringilla lectus. Proin non maximus justo. Mauris in lectus libero.
+                        </div>
+                        <div class="col-md-12" style="margin:0;padding:0;margin-top:10px;">
+                            <div class="col-md-4">
+                                <span style="color:red;">*</span> Patient Name
+                            </div>
+                            <div class="col-md-8">
+                                <input type="text" style="width:200px;" placeholder="Enter value" />
+                            </div>
+                        </div>
+                        <div class="col-md-12" style="margin:0;padding:0;margin-top:10px;">
+                            <div class="col-md-4">
+                                <span style="color:red;">*</span> Room Number
+                            </div>
+                            <div class="col-md-8">
+                                <input type="text" style="width:200px;" placeholder="Enter value" />
+                            </div>
+                        </div>
+                        <div class="col-md-12" style="margin:0;padding:0;margin-top:10px;">
+                            <div class="col-md-4">
+                                <span style="color:red;">*</span> Bed Number
+                            </div>
+                            <div class="col-md-8">
+                                <input type="text" style="width:200px;" placeholder="Enter value" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12" style="margin-top:10px;" id="save">
                     <div class="col-md-4">&nbsp;</div>
                     <div class="col-md-8">
-                        <input type="button" class="btn btn-success" value="Save &amp; Continue" />
+                        <input id="success" type="button" class="btn btn-primary" style="width:200px;" value="Save &amp; Continue" /><br />
+                        <span style="color:red;">*</span> = required field
                     </div>
                 </div>
             </fieldset>
@@ -102,3 +117,27 @@
 </div>
 </body>
 </html>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("select").change(function(){
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+                $(".box").not("." + optionValue).hide();
+                $("#success").click(function(){
+                    if(optionValue=='open'){
+                        window.location.href="situation_open.html";
+                    }else{
+                        window.location.href="situation_template.html";
+                    }
+                });
+                $("." + optionValue).show();
+            } else{
+                $(".box").hide();
+
+            }
+        });
+    }).change();
+
+});
+</script>
