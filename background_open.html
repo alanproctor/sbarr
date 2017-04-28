@@ -1,0 +1,68 @@
+background<!DOCTYPE html>
+<html>
+<head>
+    <title>SBARR</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="col-md-12 col-sm-12 col-xs-12" id="header" style="margin:0;padding:0;">
+            <div class="col-md-6 col-sm-6 col-xs-6" style="height:40px;border-bottom:1px solid black;background-color:black;text-align:left;line-height:40px;color:white;">
+                MyRounding
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6" style="height:40px;border-bottom:1px solid black;background-color:black;text-align:right;line-height:40px;color:white;text-decoration:underline;">
+                Alan Proctor
+            </div>
+
+            <div class="col-md-12 col-sm-12 col-xs-12" style="height:40px;border-bottom:1px solid black;background-color:#CCC;text-align:right;line-height:40px;color:white;text-decoration:underline;">
+            </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12" id="content">
+          <h1 style="text-align:center">Background <i class="fa fa-info-circle" aria-hidden="true"></i> </h1>
+          <div class="col-md-12 col-sm-12 col-xs-12" style="height:40px;margin-bottom:10px;background-color:#CCC;text-align:center;line-height:40px;color:white">
+            <a href="javascript:$('#feedbackModal').modal('show');" onclick="$('#feedbackModal .modal-body').html('test')">S</a>&nbsp;&nbsp;&nbsp;<a href="javascript:$('#feedbackModal').modal('show');" onclick="$('#feedbackModal .modal-body').html('test B')">B</a>&nbsp;&nbsp;&nbsp;<a href="javascript:$('#feedbackModal').modal('show');" onclick="$('#feedbackModal .modal-body').html('test B')">A</a>&nbsp;&nbsp;&nbsp;<a href="javascript:$('#feedbackModal').modal('show');" onclick="$('#feedbackModal .modal-body').html('test B')">R</a>&nbsp;&nbsp;&nbsp;<a href="javascript:$('#feedbackModal').modal('show');" onclick="$('#feedbackModal .modal-body').html('test B')">R</a>
+          </div>
+
+          <textarea name="background" rows="8" cols="86" placeholder="Enter the background" class="col-md-offset-3"></textarea><br>
+          <div>
+            <input type="button" class="btn btn-primary btn-lg col-md-6 col-md-offset-3" value="Next" style="top:20px">
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12" id="footer" style="height:30px;position:absolute;bottom:0;border-top:1px solid black;background-color:black;color:white;text-align:center;">
+            Copyright MyRounding 2017&copy;
+        </div>
+    </div>
+
+    <div id="feedbackModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" style="width:800px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Feedback</h4>
+                </div>
+                <div class="modal-body" style="height:400px;">
+                    <div style="max-height:200px;overflow:auto;border-bottom:1px dotted black;">
+                        <div><span style="text-decoration:underline;">John</span> (04/26/2017 04:53)</div>
+                        <div>Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus tincidunt id arcu a fermentum. Aliquam vel pretium orci. Aenean urna purus, ultrices sed luctus ac, pulvinar vel elit. Integer at nisi dui. Curabitur aliquam elit vel purus dignissim auctor. Nunc a risus non turpis luctus condimentum. Integer commodo magna vel enim varius lacinia. Vestibulum vestibulum elit lorem, eget vestibulum nisl mattis mollis. Cras sit amet rutrum justo, id euismod risus. Integer rhoncus ipsum neque. Ut id quam ut est tempus mattis ut ac justo. Sed pulvinar sodales dictum. Sed tempus eros vitae ante euismod ullamcorper ac quis erat. Nulla molestie, massa eu vestibulum malesuada, sem libero porta enim, at rhoncus sem sem sed diam. Phasellus consequat in ipsum nec volutpat.</div>
+                        <div style="margin-top:15px;"><span style="text-decoration:underline;">Alan</span> (04/26/2017 04:53)</div>
+                        <div>Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus tincidunt id arcu a fermentum. Aliquam vel pretium orci. Aenean urna purus, ultrices sed luctus ac, pulvinar vel elit. Integer at nisi dui. Curabitur aliquam elit vel purus dignissim auctor. Nunc a risus non turpis luctus condimentum. Integer commodo magna vel enim varius lacinia. Vestibulum vestibulum elit lorem, eget vestibulum nisl mattis mollis. Cras sit amet rutrum justo, id euismod risus. Integer rhoncus ipsum neque. Ut id quam ut est tempus mattis ut ac justo. Sed pulvinar sodales dictum. Sed tempus eros vitae ante euismod ullamcorper ac quis erat. Nulla molestie, massa eu vestibulum malesuada, sem libero porta enim, at rhoncus sem sem sed diam. Phasellus consequat in ipsum nec volutpat.</div>
+                        <div style="margin-top:15px;"><span style="text-decoration:underline;"><strong>Dean</strong></span> (04/26/2017 04:53)</div>
+                        <div>Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus tincidunt id arcu a fermentum. Aliquam vel pretium orci. Aenean urna purus, ultrices sed luctus ac, pulvinar vel elit. Integer at nisi dui. Curabitur aliquam elit vel purus dignissim auctor. Nunc a risus non turpis luctus condimentum. Integer commodo magna vel enim varius lacinia. Vestibulum vestibulum elit lorem, eget vestibulum nisl mattis mollis. Cras sit amet rutrum justo, id euismod risus. Integer rhoncus ipsum neque. Ut id quam ut est tempus mattis ut ac justo. Sed pulvinar sodales dictum. Sed tempus eros vitae ante euismod ullamcorper ac quis erat. Nulla molestie, massa eu vestibulum malesuada, sem libero porta enim, at rhoncus sem sem sed diam. Phasellus consequat in ipsum nec volutpat.</div>
+                    </div>
+                    <div style="margin-top:15px;">
+                        <textarea placeholder="Add a comment here..." style="width:100%;" rows="7"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="button" class="btn btn-success" value="Submit" />
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
